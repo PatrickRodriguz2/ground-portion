@@ -51,10 +51,13 @@
     <li>your session history and readiness figures,</li>
     <li>your settings, such as licence type, aeroplane profile and reminder time.</li>
   </ul>
-  <p>All of it is written to a single file inside the app's own storage on your device. It never leaves the device, it is not backed up to any server belonging to the developer, and the developer cannot see it. If you delete the app, that data is deleted with it.</p>
+  <p>All of it is written to a single file inside the app's own storage on your device. The developer never receives it and cannot see it. If you delete the app, the copy on that device is deleted with it.</p>
+  <h2>iCloud sync</h2>
+  <p>With iCloud sync on (Settings › Sync, on unless you turn it off), each of your devices also keeps a copy of its own progress — your marks, review schedule, session reports and flagged questions — in the private database of your iCloud account, through Apple's CloudKit, so your iPhone, iPad and Mac can combine their progress. Only devices signed in to your Apple Account can read that copy; the developer has no access to it, and it counts towards your own iCloud storage (a few tens of kilobytes per device). Turn sync off in Settings to keep progress on one device only. To delete the iCloud copy, use Settings › your name › iCloud › Storage › Ride Ready on an iPhone or iPad. The readiness checklist, flight test date and settings are not synced.</p>
+  <p>You can erase your progress at any time with "Reset all progress" in Settings — with sync on, on every device signed in to your iCloud account.</p>
 
   <h2>Network access</h2>
-  <p>The app makes no network requests. It works entirely offline, and there is no server component.</p>
+  <p>The app contacts no server belonging to the developer. It works entirely offline, and there is no server component. The only network traffic is Apple's: if you leave iCloud sync on, your own iCloud account carrying your progress between your devices.</p>
 
   <h2>Sharing a report</h2>
   <p>The app can generate a written summary of a practice session and offer it to the iOS share sheet, so you can send it to an instructor. This only ever happens when you tap Share and choose a destination yourself. The text goes wherever you send it — Messages, Mail, or another app of your choosing — and the developer never receives a copy.</p>
@@ -77,7 +80,7 @@
   <hr>
 
   <footer>
-    <p>Effective 29 August 2026 · Ride Ready is independent work by P. Rodrigues, Class 3 Flight Instructor. It is not affiliated with, endorsed by, or a publication of Transport Canada.</p>
+    <p>Effective 9 October 2026 · Ride Ready is independent work. It is not affiliated with, endorsed by, or a publication of Transport Canada.</p>
   </footer>
 
 </main>
